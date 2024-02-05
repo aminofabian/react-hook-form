@@ -1,0 +1,7 @@
+@tailwind base;
+@tailwind components;
+.input {@apply border-[1px] px-2 rounded-sm mb-3}
+.form-label  {@apply text-base font-bold mb-2}
+.error {@apply text-red-400 text-xs mb-3}
+
+@tailwind utilities;
