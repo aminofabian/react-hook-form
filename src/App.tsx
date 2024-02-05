@@ -20,7 +20,7 @@ function App() {
     password: z.string().min(5).max(15),
     confirmPassword: z.string().min(5).max(15)
   }).refine((data) => data.password === data.confirmPassword, {
-    message: "Passwords do not match",
+    message: "Passwords do not match. Please check",
     path: ["confirmPassword"]
   });
   
