@@ -45,19 +45,30 @@ function App() {
     {errors.firstName && <span className="error">{errors.firstName.message}</span>}
     
     <label className='form-label'>Last Name: </label>
-    <input type='text'className="input" {...register('lastName')}></input>
+    <input type='text' className="input" {...register('lastName')}></input>
+    {errors.lastName && <span className="error">{errors.lasttName.message}</span>}
+    
     
     <label className='form-label'>Email: </label>
     <input type='email' className="input" {...register('email')}></input>
+    {errors.email && <span className="error">{errors.email.message}</span>}
+    
     
     <label className='form-label'>Age: </label>
-    <input type='number' className="input" {...register('age', {valueAsNumber: true})}></input>
+    <input type='number' className="input" {...register('age', { valueAsNumber: true })}></input>
+    {errors.age && <span className="error">{errors.age.message}</span>}
+    
     
     <label className='form-label'>Password: </label>
     <input type='password' className="input" {...register('password')}></input>
+    {errors.password && <span className="error">{errors.password.message}</span>}
+    
     
     <label className='form-label'>Confirm Password: </label>
     <input type='password' className="input" {...register('confirmPassword')}></input>  
+    {errors.confirmPassword && <span className="error">{errors.confirmPassword.message}</span>}
+    
+    
     <input type='submit' value='Submit'></input>
     </form>
     </div>
