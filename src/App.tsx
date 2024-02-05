@@ -46,7 +46,7 @@ function App() {
     
     <label className='form-label'>Last Name: </label>
     <input type='text' className="input" {...register('lastName')}></input>
-    {errors.lastName && <span className="error">{errors.lasttName.message}</span>}
+    {errors.lastName && <span className="error">{errors.lastName.message}</span>}
     
     
     <label className='form-label'>Email: </label>
@@ -77,5 +77,5 @@ function App() {
     )
   }
   
-  export default App
+  export default App;
   
